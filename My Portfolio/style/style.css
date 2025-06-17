@@ -1,0 +1,41 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafc;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.banner {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(to right, #ffe5f0, #def3f9);
+}
+
+section {
+  padding: 3rem;
+}
+
+.skill-card {
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.badge {
+  display: inline-block;
+  padding: 1rem;
+  background: #f0e6ff;
+  border-radius: 12px;
+}
