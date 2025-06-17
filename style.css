@@ -1,0 +1,156 @@
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8e4bc;
+  color: #333333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(248, 228, 188, 0.9); /* Slight transparency */
+  z-index: 1000;
+}
+
+/* Left-aligned title */
+.left-nav h1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Left-aligned clickable title */
+.left-nav a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s ease-in-out;
+}
+
+.left-nav a:hover {
+  color: #FF7E5F;
+}
+
+/* Right-aligned menu */
+.right-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem; /* Proper spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.right-nav li {
+  display: inline-block; /* Ensures horizontal alignment */
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Adds spacing to prevent cut-off */
+  transition: 0.3s ease-in-out;
+}
+
+.right-nav a:hover {
+  color: #FF7E5F;
+}
+
+/* Fix for Overflow Issues */
+.right-nav {
+  display: flex;
+  flex-wrap: wrap; /* Ensures text wraps correctly */
+}
+
+/* Smooth Scroll Fix */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Intro Section */
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, #FF7E5F, #FEB47B);
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  opacity: 0;
+  animation: fadeIn 2s forwards 2s;
+}
+
+.developer-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: slideUp 1.5s forwards 3s;
+}
+
+/* CTA Button */
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f8e4bc;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  animation: fadeIn 2s forwards 4s;
+}
+
+.cta:hover {
+  background: #ffbb85;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Smooth Scroll Fix */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
